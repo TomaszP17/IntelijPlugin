@@ -78,7 +78,6 @@ public final class ProjectAnalyzer {
         String text = psiFile.getText();
         int methodCount = 0;
 
-        // Wzorzec wyszukujący metody na podstawie słów kluczowych (przykład prosty i niedoskonały)
         Pattern pattern = Pattern.compile("\\b(public|protected|private|static|void|int|String|double)\\b\\s+\\w+\\s*\\(");
         Matcher matcher = pattern.matcher(text);
 
